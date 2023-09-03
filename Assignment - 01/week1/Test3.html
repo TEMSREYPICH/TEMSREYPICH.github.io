@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <a href="Test2.html" style="color: red;">Test2</a> &emsp;
+    <a href="Form.html" style="color:rgb(0, 255, 106)">Cleck form</a> &ensp;
+    <a href="Category.html">Cleck Category</a>&nbsp;<br>
+
+    <a href="Form.html">
+        <img src="/cute girl.jpg" width="300px" height="350px"/>
+    <p>She so beautyful</p>
+    <p>Blaok lender look to tap hidden strengths in a tough year for small bank. </p>
+    </a>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+
+<script>
+var w;
+// function stopworker(){
+//     w.terminate;
+//     w.undefined;
+// }
+function startWorker() {
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("demo_workers.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+  }
+}
+// function startWorker(){
+//     if(typeof(Worker) !== "undefined"){
+//         if(typeof(w) == "undefined"){
+//             w = new Worker("demo_workers.js");
+//         }
+//         w.onmessage = function(event){
+//             document.getElementById("result").innerHTM = "sorry, your browser does not support web workers..";
+//         }
+//     }
+// }
+// function startWorker(){
+//     if(typeof(w) !=="undefined"){
+//         if(typeof(w)== "underfined"){
+//             w = new worker("demo_workers.js")
+//         }
+//     }
+//     w.onmessage = function(event){
+//         document.getElementById("result").innerHTML = event.data;
+//     }
+//     else {
+//         document.getElementById("result").innerHTML = "sorry,your browser does not support web workers...";
+//     }
+// }
+
+function stopWorker() { 
+  w.terminate();
+  w = undefined;
+} 
+</script>
+<script>
+    
+</script>
+
+</body>
+</html>
