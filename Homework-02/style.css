@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+}
+.container{
+
+}
+.list{
+    background-color: cadetblue;
+}
+.list ol{
+    border: 5px;
+    width: 100%;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: inline-flex;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.list li{
+    padding: 10px;
+}
+.contain{
+    display:flex;
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+}
+.left{
+    width: 33%;
+}
+.box{
+    position: relative;
+}
+.cover img{
+    width: 100%;
+    z-index: 1;
+}
+.profile img{
+    width: 40%;
+    z-index: 3;    
+}
+table{
+    width: 100%;
+}
+.midle{
+    background-color: blue;
+    width: 33%;
+}
+.right{
+    background-color: aquamarine;
+    width: 33%;
+}
