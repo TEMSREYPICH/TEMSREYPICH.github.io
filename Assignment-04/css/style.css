@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+.contact{
+    background-color: black;
+    height: 20px;
+    color: white;
+}
+.con-right{
+    padding: 15px ;
+    margin-left: 220px;
+
+}
+.search{
+    /* background-color: black; */
+}
+.box-serch{
+    display: flex;
+    background-color: black;
+}
+.search{
+    float: left;
+}
+.text{
+    float: left;
+}
+.btn_search{
+
+    padding: 15px ;
+    margin-left: 220px;
+    width: 400px;
+}
+.list  ol{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+ol li {
+    cursor:pointer;
+    &:hover {
+      text-decoration: underline;
+      color: red;
+    }
+  }
+.list li{
+    padding: 10px;
+}
+.list.li:active {text-decoration: underline;}
+.t-menu{
+    display: flex;
+    padding: 0;
+
+}
+.t-menu img{
+    width: 205px;
+    height: 200px;
+    padding: 5px;
+
+}
+.img{
+    position: relative;
+    font-family: Arial;
+}
+.text-block {
+    position: absolute;
+    top: 26px;
+    left: 23px;
+    color: white;
+ }
+ .product-new{
+    position: relative;
+ }
+ .list-product{
+    display: flex;
+ }
+ .product .list-2{
+    margin-left: 220px;
+ }
+ .list-2  ol{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.list-2 li{
+    padding: 10px;
+}
+.tab-nav{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+}
+.new-product {
+    display: flex;
+
+}
+.new-product img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+.new {
+    position: absolute;
+    top: 26px;
+    right: 23px;
+ }
+ .img-new .btn {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+.img2 {
+    text-align: center;
+    border: 2px solid green;
+}
+.img2 span{
+    padding: 5px;
+}
+.chat{
+    position: relative;
+}
+.heart{
+    position: absolute;
+    left: 400px;
+    bottom: 50px;
+}
+.shop{
+    position: absolute;
+    left: 480px;
+    bottom: 50px;
+  
+}
